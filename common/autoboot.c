@@ -445,6 +445,8 @@ const char *bootdelay_process(void)
 	bootcount_inc();
 
 	s = env_get("bootdelay");
+
+	debug("[YYF] env_bootdelay=%d config_bootdelay=%d\n", (int)simple_strtol(s, NULL, 10), CONFIG_BOOTDELAY);
 	bootdelay = s ? (int)simple_strtol(s, NULL, 10) : CONFIG_BOOTDELAY;
 
 	/*

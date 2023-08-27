@@ -239,6 +239,8 @@ int genphy_update_link(struct phy_device *phydev)
 	if (phydev->link && mii_reg & BMSR_LSTATUS)
 		return 0;
 
+	debug("[YYF] %s:%s:%d device:%s\n", __FILE__, __func__, __LINE__, phydev->dev->name);
+	
 	if ((phydev->autoneg == AUTONEG_ENABLE) &&
 	    !(mii_reg & BMSR_ANEGCOMPLETE)) {
 		int i = 0;
