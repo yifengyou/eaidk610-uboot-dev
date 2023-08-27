@@ -1,2 +1,16 @@
-# eaidk610-uboot-dev
-eaidk610-uboot 202207
+# eaidk610 uboot v2022.07
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
